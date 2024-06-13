@@ -12,7 +12,7 @@ def reverse_and_order_strings(binary_string1: str, binary_string2: str) -> tuple
 def add_binary(str1: str, str2: str) -> str:
     result = ""
     carry = 0
-    first_str, second_str = reverse_and_order_strings(str1,str2)
+    first_str, second_str = reverse_and_order_strings(str1, str2)
     for first_binary in first_str:
         sec_binary = next(second_str, 0)
         binary_sum = int(first_binary) + int(sec_binary) + carry
