@@ -1,4 +1,4 @@
-def remove_leading_space(input_string):
+def remove_leading_space(input_string: str) -> str:
     """
     Remove leading white space from string
     """
@@ -8,7 +8,7 @@ def remove_leading_space(input_string):
     return input_string[first_non_space_index:]
 
 
-def myatoi(input_string):
+def myatoi(input_string: str) -> int:
     """
     This function converts a string to an integer. The function first removes leading spaces from the input string.
     Then it checks if the first character is '+' or '-', and sets the multiplier accordingly.
