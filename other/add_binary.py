@@ -1,4 +1,7 @@
 def reverse_and_order_strings(binary_string1: str, binary_string2: str) -> tuple:
+    """
+    Reverse the strings and order them by length
+    """
     if len(binary_string1) >= len(binary_string2):
         long_str = binary_string1
         short_str = binary_string2
@@ -10,6 +13,9 @@ def reverse_and_order_strings(binary_string1: str, binary_string2: str) -> tuple
 
 
 def add_binary(str1: str, str2: str) -> str:
+    """
+    Given two binary strings, return their sum (also a binary string).
+    """
     result = ""
     carry = 0
     first_str, second_str = reverse_and_order_strings(str1, str2)
