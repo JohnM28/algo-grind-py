@@ -1,4 +1,4 @@
-def is_palindrome(string):
+def is_palindrome(string: str) -> bool:
     """
     This function checks if a string is a palindrome. It uses two pointers to compare the characters at the beginning and end of the string.
     """
