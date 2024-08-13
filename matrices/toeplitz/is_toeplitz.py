@@ -7,6 +7,9 @@ from typing import List
 
 class Solution:
     def is_toeplitz_matrix(self, matrix: List[List[int]]) -> bool:
+        """
+        Returns TRUE if the matrix is Toeplitz. Otherwise FALSE
+        """
         for i in range(len(matrix) - 1):
             for j in range(len(matrix[i]) - 1):
                 if matrix[i][j] != matrix[i + 1][j + 1]:
