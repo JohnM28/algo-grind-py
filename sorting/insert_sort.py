@@ -36,7 +36,5 @@ def insert_sort(arr: list) -> list:
 if __name__ == '__main__':
     arr = [5, 3, 2, 4, 1]
     print(insert_sort(arr))
-    print(insert_sort_v2(arr))
-    arr = [5, 3, 10, 4, 1, 6, 2]
-    print(insert_sort(arr))
+    arr = [10, 3, 1, 11, 5, 6, 2]
     print(insert_sort_v2(arr))
