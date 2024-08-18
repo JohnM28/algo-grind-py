@@ -7,11 +7,17 @@ from trees.binary_tree import TreeNode
 
 class Solution:
     def has_path_sum(self, root: TreeNode | None, target_sum: int) -> bool:
+        """
+        Checks if the tree has a path sum equal to the target sum
+        """
         if not root:
             return False
         return self._traverse_and_find(root, 0, target_sum)
 
     def _traverse_and_find(self, node: TreeNode, value_sum: int, target_sum: int) -> bool:
+        """
+        Traverses the tree and finds the path sum
+        """
         if not node:
             return False
         value_sum += node.val
