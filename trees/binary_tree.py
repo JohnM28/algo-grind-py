@@ -7,6 +7,9 @@ class TreeNode:
         self.left = left
         self.right = right
 
+    def __str__(self):
+        return str(self.val)
+
 
 class Traverse:
     def preorderTraversal(self, root: TreeNode) -> List[int]:
